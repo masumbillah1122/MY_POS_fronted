@@ -3,7 +3,7 @@ const initialState = {
     cartItems: []
 }
 
- const rootReducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
      switch (action.type) {
        case "SHOW_LOADING":
          return {
@@ -40,4 +40,4 @@ const initialState = {
          return state;
      }
 }
-module.exports = rootReducer;
+// module.exports = rootReducer;
